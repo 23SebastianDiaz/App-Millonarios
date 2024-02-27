@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/viewRoot"
+    android:layout_height="match_parent"
+    tools:context=".MillosPlayersActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradiante">
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Name"
+        app:startIconDrawable="@drawable/ic_person_name"
+        app:startIconTint="@color/white"
+        android:textColorHint="@color/white"
+        app:endIconMode="clear_text"
+        app:endIconCheckable="true"
+        app:endIconTint="@color/white"
+        app:backgroundTint="@drawable/focus_textinput">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/teFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:background="@android:color/transparent"
+            android:textColor="@color/white"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
